@@ -10,7 +10,7 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json());
 
-mongoose.connect('mongosh "mongodb+srv://cluster0.7iovvda.mongodb.net/" --apiVersion 1 --username vaishalisingh', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://vaishalisingh:HA1ym5MRgrq4KNFj@cluster0.7iovvda.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
