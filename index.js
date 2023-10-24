@@ -10,7 +10,7 @@ const app = express();
 app.use(cors())
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://0.0.0.0:27017/videoAnalyzerDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongosh "mongodb+srv://cluster0.7iovvda.mongodb.net/" --apiVersion 1 --username vaishalisingh', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
